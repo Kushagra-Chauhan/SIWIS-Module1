@@ -7,9 +7,9 @@
 }
 
 .header{
-    min-height: 100vh;
+    min-height: 150vh;
     width: 100%;
-    background-image: url(pic.jpg);
+    background-image: url(robot.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -24,6 +24,8 @@ nav{
 
 nav img{
     width: 65px;
+    border: 2px solid black;
+    border-radius: 3px;
 }
 
 .nav-links{
@@ -39,16 +41,17 @@ nav img{
 }
 
 .nav-links ul li a{
-    color: white;
+    color: black;
     text-decoration: none;
-    font-size: 23px;
+    font-size: 27px;
+    padding: 30px;
 }
 
 .nav-links ul li::after{
     content: '';
     width: 0%;
     height: 2px;
-    background: rgb(150, 247, 112);
+    background: black;
     display: block;
     margin: auto;
 }
@@ -59,126 +62,174 @@ nav img{
 
 .text-box{
     width: 90%;
-    color: white;
+    color:black;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    text-align: center;
+    text-align: left;
+    margin-right: 50%;
 }
 
-/* .text-box h1{
-    font-size: 62px;
-} */
+.text-box h2{
+    font-size: 40px;
+    padding-top: 30px;
+}
 
-/* .text-box img{
-    max-width: 200px;
-} */
 
 .text-box p{
     margin: 10px 0 40px;
     font-size: 24px;
+    padding-right: 40%;
+    margin-top: 60px;
 }
 
 .button{
     display: inline-block;
     text-decoration: none;
-    color: white;
+    color:white;
     border: 1px solid white;
     padding: 12px 34px;
     font-size: 20px;
-    background: transparent;
+    background: black;
     position: relative;
     cursor: pointer;
 }
 
 .button:hover{
-    border: 2px rgb(15, 182, 9) ;
-    background: rgb(155, 233, 111);
+    border: 2px solid black ;
+    background: rgb(235, 240, 235);
     transform: 1s;
+    color: black;
 }
 
-/* wings of saras */
-
-.wings{
+.container{
+    background-image:url(robot1.jpeg);
+    height: 100vh;
     width: 100%;
-    margin: auto;
     text-align: center;
-    padding-top: 50px;
+    /* background-size: cover; */
+}
+
+
+.container h3{
+    font-size: 50px;
+    text-align: left;
+    margin-left: 25%;
+}
+
+.container p{
+    font-size: 30px;
+    text-align: left;
+    margin-left: 5%;
+    padding: 20px;
+}
+
+.container-1{
+    display: flex;
+    margin-right: 30%;
+    margin-left: 5%;
+}
+
+.box{
+    /* margin-right: 50%;
+    margin-left: 10%;
+    display: flex; */
     
+    margin: 20px;
+    box-sizing: border-box;
+    flex-basis: 31%;
+    background: wheat;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    justify-content: center;
 }
 
-.wings h2{
-    font-size: 40px;
-    font-weight: 600;
+.box:hover{
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
 }
 
-.wings p{
-    font-size: 27px;
-    font-weight: 300;
-    padding-top: 30px;
+.box h4{
+    font-size: 30px;
+    /* text-align: left; */
+    /* margin-left: 10%; */
+}
+
+.box p{
+font-size: 20px;
+}
+
+.members{
+    /* background-image: url(discription.jpg); */
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.members h2{
+    padding-top: 25px;
+    font-size: 50px;
 }
 
 .row{
-    margin-top: 5%;
-    display: block;
-    padding: 10px;
+    display: flex;
+    box-sizing: border-box;
+    padding: 50px;
     justify-content: space-between;
-    box-sizing: border-box; 
-    background-color: cadetblue;
-    width: 80%;
-    
+   
+
+}
+
+.discription{
+    /* margin-right: 50%;
+    margin-left: 10%;
+    display: flex; */
     height: auto;
+    width: 100px;
+    margin: 20px;
+    box-sizing: border-box;
+    flex-basis: 31%;
+    background: wheat;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    justify-content: center;
 
-    padding: 20px;
     
-
+    
 }
 
-.clubs{
-    /* flex-basis: 32%; */
-    /* border-radius: 10px; */
-    margin-bottom: 30px;
-    /* position: relative; */
-    /* overflow: hidden; */
-padding: 20px;
-
+.discription:hover{
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
 }
 
-.clubs img{
-    width: 4oopx;
-    /* display: block; */
-    height: 400px;
+.discription h3{
+    font-size: 30px;
+   
 }
 
-.layer{
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
+.discription p{
+    font-size: 20px;
+    margin-top: 10px;
 }
 
-.layer:hover{
-    background: rgba(178, 238, 160, 0.7);
+.discription img{
+    height: 150px;
+    width: 150px;
+border: 1px solid black;
+border-radius: 150px;
 }
 
-.layer h3{
-    width: 100%;
-    font-weight: 500;
-    color: #fff;
-    font-size: 26px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
+.footer{
+    height: 40vh;
+    background-color: black;
 }
 
-.layer:hover h3{
-    bottom: 49%;
-    opacity: 1;
+.footer h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
 }
